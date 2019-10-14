@@ -1,3 +1,12 @@
-styles.css to come
+ul {
+    float: right;
+}
+li {
+    float: none;
+    list-style-type: none;
+}
 
-hej
+form {
+    float: bottom;
+    float: left;
+}
