@@ -1,34 +1,32 @@
-class Reservation{
-    reservation(firstName, lastName, phoneNumber,){
+class Reservation {
+    Reservation(firstName, lastName, phoneNumber, email, date, time, comment) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.phoneNumber = phoneNumber;
+        this.email = email;
+        this.date = date;
+        this.time = time;
+        this.comment = comment;
     }
-
-    reservation1 = new Reservation(
+    {
+    Reservation1 = new Reservation(
         document.getElementById("firstName").value,
         document.getElementById("lastName").value,
         document.getElementById("phoneNumber").value,
+        document.getElementById("email").value,
+        document.getElementById("date").value,
+        document.getElementById("time").value,
+        document.getElementById("comment").value,
     );
-
-    localStorage.
-
-
+}
+console.log(.value);
 }
 
 for (const htmlElement of document = "frontpage.html") {
 
 }
-var firstName = document.getElementById("firstName").value;
-var lastName = document.getElementById("lastName").value;
-var phoneNumber = document.getElementById("phoneNumber").value;
-var email = document.getElementById("email");
-var numGuests = document.getElementById("numGuests");
-var date = document.getElementById("date");
-var time = document.getElementById("time");
-var comment = document.getElementById("comment");
 
-function storeLogin () {
+function reservation () {
     localStorage.setItem('firstName');
     localStorage.setItem('lastName');
     localStorage.setItem('phoneNumber');
