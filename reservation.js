@@ -35,6 +35,7 @@ function reservation () {
     localStorage.setItem('date');
     localStorage.setItem('time');
     localStorage.setItem('comment');
+
     alert('Reservation has been made');
 
 }
