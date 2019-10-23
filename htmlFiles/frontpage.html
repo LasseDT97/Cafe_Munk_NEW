@@ -10,17 +10,36 @@
     <!-- titel på fanen i browseren -->
     <title>Cafe Munk</title>
 </head>
-
 <body>
-Virker det nu Vic?
+
 <!-- navbar der fungerer som menu til (specielt vigtigt i BIS) -->
 <div class="topnav">
     <a class="active" href="#om os">Om os</a>
-    <a href="#menu">Menu</a>
+    <a href="http://127.0.0.1:65520/index-menu.html">Menu</a>
     <a href="#find os">Find os</a>
     <a href="#åbningstider">Åbningstider</a>
-    <a href="#kontakt">Kontakt</a>
+    <a href="http://127.0.0.1:65520/index-contact.html">Kontakt</a>
 </div>
+
+<body>
+<style>
+/* @Albert, gider du tjekke op på dette link: https://www.w3schools.com/howto/howto_js_slideshow.asp. tænker det lave
+en flottere homepage? Så den skifter billeder */
+    body{background-image: url("https://wallpaperbro.com/img/163380.jpg");
+        background-position: center;
+        background-size: 110%;
+        background-repeat: no-repeat;}
+
+    form{
+        border-style: hidden;
+        background-color: #2e2e2e;
+        color:tomato;
+        text-align: center;
+        width: 250px;
+        float:left;
+    }
+</style>
+</body>
 
 <br/>
 <br/>
@@ -51,16 +70,14 @@ Virker det nu Vic?
     <br/>
     <h4> Additional Comments
         <br/>
-        <input type="text" id="comment" value="" placeholder="Comment"/>
+        <input type="text" rows="5" cols="30" id="comment" value="" placeholder="Comment"/>
     <br/>
     <br/>
-
-    <br/>
-    <br/>
-        <button type="submit" value="Submit" onclick="storeLogin()"></button>
+        <!-- @Albert, gider du fixe submit knappen?--!>
+        <button type="submit" value="Submit"></button>
         <script src="../javaFiles/reservation.js"
 </form>
 
 </body>
-
+/* @Albert, kan du sætte den der bar du havde nederst
 </html>

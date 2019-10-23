@@ -1,0 +1,65 @@
+body {
+    margin: 8px;
+    background-color: burlywood;
+    font-family: Verdana;
+    text-align: center;
+
+
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+    font-family: cursive;
+    font-size: 20px
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #516e59;
+
+}
+
+.active {
+    background-color: #e33f22;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: tomato;
+    text-align: center;
+    font-size: 40px
+}
+/*Applying table settings in style.css file */
+table {
+    border-collapse:collapse;
+    border: 0px burlywood;
+    font-family: cursive;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+th, td {
+    border-color:burlywood;
+    text-align: center;
+    font-family: cursive;
+}
+th {
+    font-size: 30px;text-align: left
+}
+td {
+    font-size: 20px;text-align: left
+}

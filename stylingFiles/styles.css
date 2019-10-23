@@ -1,50 +1,58 @@
-@charset "UTF-8";
+/*This is how comments are written in CSS*/
 
-body {
-    background-color: beige;
-    color: darkkhaki;
-    text-align: left;
-}
+/*Generel style settings for the body element in the HTML file*/
+body {background-color:#2e2e2e;}
 
-font-face {
-    font: -apple-system-body;
-}
-
-reservationForm {
-    border-style: hidden;
-
-    text-align: right;
-    font: bold;
-}
-
-h4 {
-    font: all-small-caps;
-}
-
-h1 {
-    font-size: medium;
-    vertical-align: center;
-}
-
-.topnav {
-    background-color: coral;
+div {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     overflow: hidden;
+    background-color: transparent;
+    font-family: cursive;
+    font-size: 20px
 }
 
-.topnav a {
+li {
     float: left;
-    color: #f2f2f2;
+}
+
+li a {
+    display: block;
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
-
-.topnav a: hover {
-    background-color: cornflowerblue;
-    color: black;
 }
 
-.topnav a.active {
-    background-color: #4CAF50;
-    color: white;
+li a:hover:not(.active) {
+    background-color: #516e59;
+
 }
+
+.active {
+    background-color: #e33f22;
+}
+body {
+    background-color: burlywood;
+    background-attachment: fixed;
+    background-position: 50% 50%;}
+
+#mydiv
+{
+    margin: 30px 0px 30px 0px;
+}
+p {color: black;
+    background-color: #f2dcbf;
+    text-align: center;
+;
+}
+
+h1, h2, h3, h4, h5, h6 {color: tomato;
+}
+
+/*Applying table settings in style.css file */
+table {border-collapse:collapse; border: 0px burlywood; float:left; text-align: center; font-family: cursive }
+th, td {border-color:burlywood; text-align: center; font-family: cursive}
+th {font-size: 30px}
+td {font-size: 20px}
