@@ -1,12 +1,50 @@
-ul {
-    float: right;
-}
-li {
-    float: none;
-    list-style-type: none;
+@charset "UTF-8";
+
+body {
+    background-color: beige;
+    color: darkkhaki;
+    text-align: left;
 }
 
-form {
-    float: bottom;
+font-face {
+    font: -apple-system-body;
+}
+
+reservationForm {
+    border-style: hidden;
+
+    text-align: right;
+    font: bold;
+}
+
+h4 {
+    font: all-small-caps;
+}
+
+h1 {
+    font-size: medium;
+    vertical-align: center;
+}
+
+.topnav {
+    background-color: coral;
+    overflow: hidden;
+}
+
+.topnav a {
     float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+
+.topnav a: hover {
+    background-color: cornflowerblue;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
 }

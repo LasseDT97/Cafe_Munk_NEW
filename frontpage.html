@@ -1,24 +1,33 @@
-<html>
+<!DOCTYPE HTML>
+
+<html lang="en">
 
 <head>
+    <!-- gør det muligt at skrive æ, ø, å. -->
+    <meta charset="UTF-8"
+    <!-- linker til stylessheetet / css filen -->
     <link type="text/css" rel="stylesheet" href="styles.css">
+    <!-- titel på fanen i browseren -->
     <title>Cafe Munk</title>
 </head>
 
 <body>
-<navbar>
-    <ul>
-        <lia>Om os  </lia>
-        <lib> Menu  </lib>
-        <lic> Find os  </lic>
-        <lid> &Aringbningstider  </lid>
-        <lie> Kontakt  </lie>
-    </ul>
-</navbar>
+<!-- navbar der fungerer som menu til (specielt vigtigt i BIS) -->
+<div class="topnav">
+    <a class="active" href="#om os">Om os</a>
+    <a href="#menu">Menu</a>
+    <a href="#find os">Find os</a>
+    <a href="#åbningstider">Åbningstider</a>
+    <a href="#kontakt">Kontakt</a>
+</div>
 
 <br/>
 <br/>
+<!-- Reservationsformularen til reservation af borde. -->
 <form id="reservationForm">
+    Reservation
+    <br/>
+    <br/>
         <input type="text" id="firstName" value="" placeholder="First Name" required/>
     <br/>
     <br>
@@ -44,14 +53,13 @@
         <input type="text" id="comment" value="" placeholder="Comment"/>
     <br/>
     <br/>
-        <input type="submit" value="Submit">
-</form>
-<button onclick="storeLogin()"
+
+    <br/>
+    <br/>
+        <button type="submit" value="Submit" onclick="storeLogin()"></button>
         <script src="reservation.js"
+</form>
 
-
-
-</script>
 </body>
 
 </html>
