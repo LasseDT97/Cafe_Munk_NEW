@@ -4,9 +4,9 @@
 
 <head>
     <!-- gør det muligt at skrive æ, ø, å. -->
-    <meta charset="UTF-8"
+    <meta charset="UTF-8">
     <!-- linker til stylessheetet / css filen -->
-    <link type="text/css" rel="stylesheet" href="styles.css">
+    <link type="text/css" rel="stylesheet" href="../stylingFiles/styles.css">
     <!-- titel på fanen i browseren -->
     <title>Cafe Munk</title>
 </head>
@@ -41,7 +41,7 @@ Virker det nu Vic?
         <input type="text" id="phoneNumber" value="" placeholder="Phone Number" required/>
     <br/>
     <br/>
-        <input type="number" id="numGuests" value="" placeholder="Number of Guests" required/>
+        <input type="number" id="numGuests" value="" placeholder="Number of Guests" max="8" required/>
     <br/>
     <br/>
         <input type="date" id="date" value="" placeholder="dd-mm-yyyy" required/>
@@ -58,7 +58,7 @@ Virker det nu Vic?
     <br/>
     <br/>
         <button type="submit" value="Submit" onclick="storeLogin()"></button>
-        <script src="reservation.js"
+        <script src="../javaFiles/reservation.js"
 </form>
 
 </body>
