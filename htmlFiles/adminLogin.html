@@ -3,19 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Log-In</title>
-    <link type="text/css" rel="stylesheet" href="styles/styles_admin.css">
 </head>
 <body>
 
-<div class="topnav">
-    <a class="active" href="#om os">Om os</a>
-    <a href="http://127.0.0.1:65520/index-menu.html">Menu</a>
-    <a href="#find os">Find os</a>
-    <a href="#åbningstider">Åbningstider</a>
-    <a href="http://127.0.0.1:65520/index-contact.html">Kontakt</a>
-</div>
 
-<h1>My application</h1>
+<h1>Admin Registration</h1>
 
 <p>Registration form</p>
 
@@ -23,24 +15,19 @@
 
 <h2>Log-In</h2>
 <form id="login-form">
-    <input id="enteredName" type="text" placeholder="Enter Username" value=""/>
-    <input id="enteredPass" type="password" placeholder="Enter Password" value=""/>
-    <input id="login_btn" type="submit" value="Login" onClick="checkLogin()" href="http://127.0.0.1:64167/index.html"/>
+    <input id="userName" type="text" placeholder="Enter Username" value=""/>
+    <input id="password" type="password" placeholder="Enter Password" value=""/>
+    <input id="registration_btn" type="submit" value="Register" onClick="storeLogin()"/>
 </form>
 <h2>Register</h2>
 
 <form id="register-form">
-    <input id="username" type="text" placeholder="Username" value=""/>
+    <input id="userName" type="text" placeholder="Username" value=""/>
     <input id="password" type="password" placeholder="Password" value=""/>
     <input id="registration_btn" type="submit" value="Register" onClick="storeLogin()"/>
 </form>
 
-<h2>Show user</h2>
-<input id="list_users_btn" type="submit" value="Show user" onClick="showUser()"/>
-<h2>Clear user</h2>
-<input id="clear_users_btn" type="submit" value="Clear user" onClick="clearUser()"/>
-
-<script src="app.js"> </script>
+<script src="/javaFiles/adminRegistration.js"> </script>
 
 </body>
 </html>
