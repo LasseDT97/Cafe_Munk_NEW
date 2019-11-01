@@ -1,4 +1,4 @@
-var objekt = new objekt ();
+/*var objekt = new objekt ();
     reservation.firstName = "Anton";
     reservation.lastName = "Søndergaard";
     reservation.phoneNumber = "20108317";
@@ -44,3 +44,4 @@ var jsonMethod = JSON.stringify(objekt, costumer)
 
         var unArray = ["kunde1", "kunde2", "kunde3"];
         var admArray = ["admin1", "admin2", "admin3"];
+*\

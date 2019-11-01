@@ -11,3 +11,5 @@ class Admin{
     );
 
 }
+
+/*current user på admin. Så denne kan logge ind og se hardcodede definitioner. Denne skal kunne bekræfte og annullere reservationer.
