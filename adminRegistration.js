@@ -8,17 +8,42 @@ class AdminRegistration {
         }
     }
 
-        let adminRegistrationList = [];
+        let adminRegistrationList = []; {
 
         adminRegistrationList.push(new AdminRegistration("Lasse", "Lasse1234", "Lasse1234"));
         adminRegistrationList.push(new AdminRegistration("Victoria", "Victoria1234", "Victoria1234"));
         adminRegistrationList.push(new AdminRegistration("Anton", "Anton1234", "Anton1234"));
 
-        console.log(adminRegistrationList);
 
-        for (let i = 0; i < adminRegistrationList.length; i++) {
-         JSON.parse(localStorage.getItem("allAdmins"));
-            }
+             console.log(adminRegistrationList); }
+
+       //Creating a function to validate entries before storing them.
+        function validateRegistration() {
+
+            //Getting values entered in the HTML document by using getElementById method.
+            let userName = document.getElementById("userName").value;
+            let password = document.getElementById("password").value;
+            let passwordAgain = document.getElementById("passwordAgain").value;
+
+             function storeLogin() {
+                 localStorage.setItem("userName", userName.value);
+                 localStorage.setItem("password", password.value);
+                 localStorage.setItem("passwordAgain", passwordAgain.value);
+
+             }
+             
+            let newAdminUser = new AdminRegistration(userName, password, passwordAgain);
+
+            adminRegistrationList.push(newAdminUser); }
+
+                console.log(adminRegistrationList);
+
+
+
+
+        //for (let i = 0; i < adminRegistrationList.length; i++) {
+        
+    //}    //    }
 /*
   function createUser () {
 
@@ -37,21 +62,6 @@ class AdminRegistration {
         localStorage.setItem("allAdmins", JSON.stringify(adminRegistrationList));
         console.log(JSON.parse(localStorage.getItem("allAdmins")));
 */
-        //Creating a function to validate entries before storing them.
-function validateRegistration() {
-
-    //Getting values entered in the HTML document by using getElementById method.
-    let newAdmin = new AdminRegistration (
-    document.getElementById("userName").value,
-    document.getElementById("password").value,
-    document.getElementById("passwordAgain").value);
-    
-    adminRegistrationList.push(newAdmin);
-    console.log(adminRegistrationList);
-    console.log("Ny admin oprettet");
-
-    localStorage.setItem("allAdmins", JSON.stringify(adminRegistrationList));
-    console.log(JSON.parse(localStorage.getItem("allAdmins")));}
 /*
     //Creating a new variable which contains the entries from above
     let newAdmin = new AdminRegistration(userName, password, passwordAgain);
