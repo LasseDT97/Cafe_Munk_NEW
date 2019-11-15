@@ -14,7 +14,6 @@ class AdminRegistration {
         adminRegistrationList.push(new AdminRegistration("Victoria", "Victoria1234", "Victoria1234"));
         adminRegistrationList.push(new AdminRegistration("Anton", "Anton1234", "Anton1234"));
 
-
              console.log(adminRegistrationList); }
 
        //Creating a function to validate entries before storing them.
@@ -25,22 +24,24 @@ class AdminRegistration {
             let password = document.getElementById("password").value;
             let passwordAgain = document.getElementById("passwordAgain").value;
 
-             function storeLogin() {
-                 localStorage.setItem("userName", userName.value);
-                 localStorage.setItem("password", password.value);
-                 localStorage.setItem("passwordAgain", passwordAgain.value);
-
-             }
-             
             let newAdminUser = new AdminRegistration(userName, password, passwordAgain);
 
-            adminRegistrationList.push(newAdminUser); }
+            adminRegistrationList.push(newAdminUser);
 
-                console.log(adminRegistrationList);
+            // Her smides alle if statements ind når nedenstående fucking kode virker!!!!
 
+            storeLogin(AdminRegistration);
 
+            function storeLogin(registration) {
 
+            console.log("Nye objekt lavet af de informationer brugeren har tastet ind", registration);
+            console.log("Array med alle eksisterende admin-users", adminRegistrationList);
 
+            localStorage.setItem(registration.userName, JSON.stringify(registration));
+
+            console.log("Ny admin user", JSON.parse(localStorage.getItem(registration.userName)));
+            }
+        }
         //for (let i = 0; i < adminRegistrationList.length; i++) {
         
     //}    //    }
