@@ -26,6 +26,8 @@ class AdminRegistration {
 
             let newAdminUser = new AdminRegistration(userName, password, passwordAgain);
 
+            for (let i = 0; i < adminRegistrationList.length; i++) {
+
             adminRegistrationList.push(newAdminUser);
 
             // Her smides alle if statements ind når nedenstående fucking kode virker!!!!
@@ -34,15 +36,17 @@ class AdminRegistration {
 
             function storeLogin(registration) {
 
+            localStorage.setItem(registration.userName, JSON.stringify(registration));
+
             console.log("Nye objekt lavet af de informationer brugeren har tastet ind", registration);
             console.log("Array med alle eksisterende admin-users", adminRegistrationList);
 
-            localStorage.setItem(registration.userName, JSON.stringify(registration));
-
             console.log("Ny admin user", JSON.parse(localStorage.getItem(registration.userName)));
+            console.log(adminRegistrationList);
             }
         }
-        //for (let i = 0; i < adminRegistrationList.length; i++) {
+        }
+
         
     //}    //    }
 /*
