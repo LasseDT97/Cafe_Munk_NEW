@@ -1,7 +1,11 @@
 /*This is how comments are written in CSS*/
 
 /*Generel style settings for the body element in the HTML file*/
-body {background-color:#2e2e2e;}
+body {
+    background-color:#2e2e2e;
+    background-image: url("/pictures/bis_background.jpg");
+
+}
 
 div {
     list-style-type: none;
