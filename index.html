@@ -3,111 +3,126 @@
 
 <head>
     <meta charset=UTF-8>
-    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <link rel="stylesheet" type="text/css" href="#ToCome"/>
     <title>Cafe Munk</title>
 
     <style>
+        body {
+            background-color: beige;
+
+        }
             .wrapper {
                 display: grid;
-                grid-template-columns: 30% 70%;
-                grid-gap: 1em;
+                grid-template-columns: 1fr 4fr;
+                grid-column-gap: 1em;
+                grid-row-gap: 1em;
             }
-            .wrapper > div {
-                background: #eee;
-                padding; 1%
+            .wrapper > div > .menubar{
+                background: beige;
+
             }
-            .registrationForm {
+            .reservationForm {
                 display: grid;
-                grid-template-columns: 70% 30%;
+                grid-template-columns: 2fr 3fr 3fr;
                 grid-gap: 1em;
             }
+            .menubar {
+                overflow: hidden;
+                background-color: grey;
+                border: #e33f22;
+                color: #e33f22;
+                text-align: right;
+                padding: 1.5em 3em;
+                font-size: 20px;
+            }
+            .food1 {
+                max-width: 250%;
+                height: auto;
+            }
+
+            .food2 {
+                max-width: 250%;
+                height: auto;
+            }
+
+            .food4 {
+                max-width: 250%;
+                height: auto;
+            }
+            .picture1 {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-gap: 1em;
+                max-width: 80%;
+                height: auto;
+                max-height: 10px;
+            }
+            .picture2 {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 1em;
+                max-width: 80%;
+                height: auto;
+            }
+            .picture4 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 1em;
+            max-width: 80%;
+            height: auto;
+            }
+
+            .firstName, .email, .phoneNumber, .numGuest, .date, .time {
+                width: 100%;
+                height: auto;
+                border: 1em;
+                font-size: 75%;
+            }
+        
         </style>
         </head>
         <body>
         <div class="wrapper">
-            <div class="picture">     <!-- hjælp til fix af logo --!>
-                <img src="pictures/logo.png" alt="Logo" height="50%" width="50%" href="index.html">
+            <div class="logo">     <!-- hjælp til fix af logo --!>
+                <img src="pictures/logo.png" alt="Logo" height="80px" width="80x" href="index.html">
             </div>
-                <div>
-                <p> Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada</p>
-                </div>
+            <div class="menubar">
+                <a id="Home" href="index.html">Om os</a>
+                <a href="#menu.html">Menu</a>
+                <a href="#ToCome">Find os</a>
+                <a href="#ToCome">Åbningstider</a>
+                <a href="contact.html">Kontakt</a>
+
+            </div>
         </div> <br>
-        <div class="registrationForm">
-            <h4>Bord reservation</h4>
+        <div class="reservationForm">
             <form id="register-form">
-                <input id="firstName" type="text" placeholder="Fornavn" value=""/> <br>
-                <input id="email" type="email" placeholder="E-Mail" value=""/> <br>
-                <input id="phoneNumber" type="number" placeholder="Telefon nummer" value=""/> <br>
-                <input id="numGuest" type="number" placeholder="Antal gæster" value=""/> <br>
-                <input id="date" type="date" placeholder="Dato" value=""/> <br>
-                <input id="time" type="time" placeholder="Tidspunkt" value=""/>
+                <h4>Bord Reservation</h4>
+                <input class="firstName"id="firstName" type="text" placeholder="Fornavn" value=""/> <br>
+                <input class="email" id="email" type="email" placeholder="E-Mail" value=""/> <br>
+                <input class="phoneNumber" id="phoneNumber" type="number" placeholder="Telefon nummer" value=""/> <br>
+                <input class="numGuest" id="numGuest" type="number" placeholder="Antal gæster" value=""/> <br>
+                <input class="date" id="date" type="date" placeholder="Dato" value=""/> <br>
+                <input class="time "id="time" type="time" placeholder="Tidspunkt" value=""/>
                 <p>Additional comments</p>
-                <input id="comment" type="text" placeholder="Kommentar til booking" value=""/> <br>
+                <input class="comment" id="comment" type="text" placeholder="Kommentar til booking" value=""/> <br>
                 <input id="registration_btn" type="submit" value="Reserver bord" onClick="validateRegistration()"/> <br>
             </form>
-            <div>
-            Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada,
+            <div class="picture1">
+                    <img class="food1" src="pictures/food1.jpeg" alt="food1" href="#Menu">
+                <div class="picture2">
+                    <img class ="food2" src="pictures/food2.jpeg" alt="food2" href="#Find os">
+                </div>
+                <div class="picture4">
+                    <img class ="food4" src="pictures/food4.jpeg" alt="food4" href="#Find os">
+                </div>
             </div>
-            <div>
-            Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada,
-            </div>
+
         </div>
+
 
         </body>
     </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <!--
