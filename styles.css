@@ -1,0 +1,25 @@
+body {
+    background-image: url("pictures/munk.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
+div {
+    border: 150px;
+}
+
+comment {
+    width: 100px;
+    height: 100px;
+}
+
+footer {
+    color: #516e59;
+    text-decoration-color: lightgray;
+}
+
+form {
+    background-color: darkgrey;
+    align-content: center;
+}

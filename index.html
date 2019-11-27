@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -6,27 +6,164 @@
     <link rel="stylesheet" type="text/css" href="styles.css"/>
     <title>Cafe Munk</title>
 
+    <style>
+            .wrapper {
+                display: grid;
+                grid-template-columns: 30% 70%;
+                grid-gap: 1em;
+            }
+            .wrapper > div {
+                background: #eee;
+                padding; 1%
+            }
+            .registrationForm {
+                display: grid;
+                grid-template-columns: 70% 30%;
+                grid-gap: 1em;
+            }
+        </style>
+        </head>
+        <body>
+        <div class="wrapper">
+            <div class="picture">     <!-- hjælp til fix af logo --!>
+                <img src="pictures/logo.png" alt="Logo" height="50%" width="50%" href="index.html">
+            </div>
+                <div>
+                <p> Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada</p>
+                </div>
+        </div> <br>
+        <div class="registrationForm">
+            <h4>Bord reservation</h4>
+            <form id="register-form">
+                <input id="firstName" type="text" placeholder="Fornavn" value=""/> <br>
+                <input id="email" type="email" placeholder="E-Mail" value=""/> <br>
+                <input id="phoneNumber" type="number" placeholder="Telefon nummer" value=""/> <br>
+                <input id="numGuest" type="number" placeholder="Antal gæster" value=""/> <br>
+                <input id="date" type="date" placeholder="Dato" value=""/> <br>
+                <input id="time" type="time" placeholder="Tidspunkt" value=""/>
+                <p>Additional comments</p>
+                <input id="comment" type="text" placeholder="Kommentar til booking" value=""/> <br>
+                <input id="registration_btn" type="submit" value="Reserver bord" onClick="validateRegistration()"/> <br>
+            </form>
+            <div>
+            Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada,
+            </div>
+            <div>
+            Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada, Lorem ipsum jada jada,
+            </div>
+        </div>
+
+        </body>
+    </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+
+    <style>
+        .grids {
+            display: grid;
+            grid-template-columns: 100% <br> 30% 70%;
+            /*grid-column-gap: 1em;
+            grid-row-gap: 1em;*/
+            grid-gap: 1em;
+        }
+
+        .registration_form > div {
+            background: #eee;
+            padding: 1em;
+            grid-template-columns: 60%;
+        }
+        .registration_form {
+            background: #e33f22;
+        }
+    </style>
+
 </head>
 <body>
-<div>
-    <a class="active" href="pictures/bis_background.jpg"></a>
-    <a class="active" href="tocCome"> Home</a>
-    <a class="active" href="toCome"> Menu</a>
-    <a class="active" href="toCome"> Find Os</a>
-    <a class="active" href="toCome"> Åbningstider</a>
-    <a class="active" href="toCome"> Contact</a>
+<div class="grids">
+    <div>
+        //image href="pictures/logo.jpg">
+    </div>
+    <ul>
+        <a id="picture" href="pictures/logo.jpg"></a>
+        <a class="active" href="toCome"> Home</a>
+        <a class="active" href="toCome"> Menu</a>
+        <a class="active" href="toCome"> Find Os</a>
+        <a class="active" href="toCome"> Åbningstider</a>
+        <a class="active" href="toCome"> Contact</a>
+    </ul>
+
+    <div class="registration_form">
+
+    </div>
+                            
 </div>
 
-<h1>Admin</h1>
 
-<h2>Register</h2>
 
-<form id="register-form">
-    <input id="userName" type="text" placeholder="Brugernavn" value=""/>
-    <input id="password" type="password" placeholder="Adganskode" value=""/>
-    <input id="passwordAgain" type="password" placeholder="Adganskode igen" value=""/>
-    <input id="registration_btn" type="submit" value="Register" onClick="validateRegistration()"/>
-</form>
+
+
+<div>
+    <footer>
+
+    </footer>
+        <p> Contact </p>
+    </ul>
+</div>
 
 <script src="adminRegistration.js"> </script>
 
