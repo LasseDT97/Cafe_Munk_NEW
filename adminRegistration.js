@@ -1,10 +1,10 @@
 //Creation of class and constructors.
 class AdminRegistration {
-        constructor(userName, password, passwordAgain) {
+        constructor(userNameAdmin, passwordAdmin, passwordAgainAdmin) {
             //Assigning variables for use later on.
-            this.userName = userName;
-            this.password = password;
-            this.passwordAgain = passwordAgain;
+            this.userNameAdmin = userNameAdmin;
+            this.passwordAdmin = passwordAdmin;
+            this.passwordAgainAdmin = passwordAgainAdmin;
         }
     }
 
@@ -26,7 +26,7 @@ class AdminRegistration {
 
             let newAdminUser = new AdminRegistration(userName, password, passwordAgain);
 
-            for (let i = 0; i < adminRegistrationList.length; i++) {
+            for (let i = 0; i < adminRegistrationList.length; i++)
 
             adminRegistrationList.push(newAdminUser);
 
@@ -36,7 +36,7 @@ class AdminRegistration {
 
             function storeLogin(registration) {
 
-            localStorage.setItem(registration.userName, JSON.stringify(registration));
+            localStorage.setItem(registration.userNameAdmin, JSON.stringify(registration));
 
             console.log("Nye objekt lavet af de informationer brugeren har tastet ind", registration);
             console.log("Array med alle eksisterende admin-users", adminRegistrationList);
@@ -45,7 +45,7 @@ class AdminRegistration {
             console.log(adminRegistrationList);
             }
         }
-        }
+
 
         
     //}    //    }
