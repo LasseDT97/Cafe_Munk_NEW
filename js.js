@@ -1,4 +1,3 @@
-
 //Kalder funktionen checkValidity() ved "SubmitBtn" iD i HTML
 document.getElementById("submitBtn").onclick = function(){ checkValidity()};
 //Opretter klassen "Reservation", og bruger constructor metoden til at tildele nedenstående proporties
@@ -16,7 +15,6 @@ class Reservation {
         this.comment = comment;
     }
 }
-
 
 // Opretter et nyt instance of an array "reservationList som et tomt array
 let reservationList = [];

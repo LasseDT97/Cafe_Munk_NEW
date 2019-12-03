@@ -68,3 +68,7 @@ flex-wrap: wrap;
 input[id="comment"] {
     width: 195px;        
 }
+.reservationForm > button {      //Skal lige fixes//
+    height: 50px;
+    width: 50px;
+}
