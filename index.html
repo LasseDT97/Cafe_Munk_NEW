@@ -1,186 +1,60 @@
-<!doctype html>
+<!DOCTYPE HTML>
+
 <html lang="en">
 
 <head>
-    <meta charset=UTF-8>
-    <link rel="stylesheet" type="text/css" href="#ToCome"/>
+    <!-- makes it possible to write æ, ø, å. -->
+    <meta charset="UTF-8">
+    <!-- links to stylessheetet / css file -->
+    <!-- title on tab in browser -->
     <title>Cafe Munk</title>
-
-    <style>
-        body {
-            background-color: beige;
-
-        }
-            .wrapper {
-                display: grid;
-                grid-template-columns: 1fr 4fr;
-                grid-column-gap: 1em;
-                grid-row-gap: 1em;
-            }
-            .wrapper > div > .menubar{
-                background: beige;
-
-            }
-            .reservationForm {
-                display: grid;
-                grid-template-columns: 2fr 3fr 3fr;
-                grid-gap: 1em;
-            }
-            .menubar {
-                overflow: hidden;
-                background-color: grey;
-                border: #e33f22;
-                color: #e33f22;
-                text-align: right;
-                padding: 1.5em 3em;
-                font-size: 20px;
-            }
-            .food1 {
-                max-width: 250%;
-                height: auto;
-            }
-
-            .food2 {
-                max-width: 250%;
-                height: auto;
-            }
-
-            .food4 {
-                max-width: 250%;
-                height: auto;
-            }
-            .picture1 {
-                display: grid;
-                grid-template-columns: 1fr;
-                grid-gap: 1em;
-                max-width: 80%;
-                height: auto;
-                max-height: 10px;
-            }
-            .picture2 {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                grid-gap: 1em;
-                max-width: 80%;
-                height: auto;
-            }
-            .picture4 {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-gap: 1em;
-            max-width: 80%;
-            height: auto;
-            }
-
-            .firstName, .email, .phoneNumber, .numGuest, .date, .time {
-                width: 100%;
-                height: auto;
-                border: 1em;
-                font-size: 75%;
-            }
-        
-        </style>
-        </head>
-        <body>
-        <div class="wrapper">
-            <div class="logo">     <!-- hjælp til fix af logo --!>
-                <img src="pictures/logo.png" alt="Logo" height="80px" width="80x" href="index.html">
-            </div>
-            <div class="menubar">
-                <a id="Home" href="index.html">Om os</a>
-                <a href="#menu.html">Menu</a>
-                <a href="#ToCome">Find os</a>
-                <a href="#ToCome">Åbningstider</a>
-                <a href="contact.html">Kontakt</a>
-
-            </div>
-        </div> <br>
-        <div class="reservationForm">
-            <form id="register-form">
-                <h4>Bord Reservation</h4>
-                <input class="firstName"id="firstName" type="text" placeholder="Fornavn" value=""/> <br>
-                <input class="email" id="email" type="email" placeholder="E-Mail" value=""/> <br>
-                <input class="phoneNumber" id="phoneNumber" type="number" placeholder="Telefon nummer" value=""/> <br>
-                <input class="numGuest" id="numGuest" type="number" placeholder="Antal gæster" value=""/> <br>
-                <input class="date" id="date" type="date" placeholder="Dato" value=""/> <br>
-                <input class="time "id="time" type="time" placeholder="Tidspunkt" value=""/>
-                <p>Additional comments</p>
-                <input class="comment" id="comment" type="text" placeholder="Kommentar til booking" value=""/> <br>
-                <input id="registration_btn" type="submit" value="Reserver bord" onClick="validateRegistration()"/> <br>
-            </form>
-            <div class="picture1">
-                    <img class="food1" src="pictures/food1.jpeg" alt="food1" href="#Menu">
-                <div class="picture2">
-                    <img class ="food2" src="pictures/food2.jpeg" alt="food2" href="#Find os">
-                </div>
-                <div class="picture4">
-                    <img class ="food4" src="pictures/food4.jpeg" alt="food4" href="#Find os">
-                </div>
-            </div>
-
-        </div>
-
-
-        </body>
-    </html>
-
-
-<!--
-
-
-    <style>
-        .grids {
-            display: grid;
-            grid-template-columns: 100% <br> 30% 70%;
-            /*grid-column-gap: 1em;
-            grid-row-gap: 1em;*/
-            grid-gap: 1em;
-        }
-
-        .registration_form > div {
-            background: #eee;
-            padding: 1em;
-            grid-template-columns: 60%;
-        }
-        .registration_form {
-            background: #e33f22;
-        }
-    </style>
-
 </head>
 <body>
-<div class="grids">
-    <div>
-        //image href="pictures/logo.jpg">
-    </div>
-    <ul>
-        <a id="picture" href="pictures/logo.jpg"></a>
-        <a class="active" href="toCome"> Home</a>
-        <a class="active" href="toCome"> Menu</a>
-        <a class="active" href="toCome"> Find Os</a>
-        <a class="active" href="toCome"> Åbningstider</a>
-        <a class="active" href="toCome"> Contact</a>
-    </ul>
 
-    <div class="registration_form">
-
-    </div>
-                            
-</div>
+<style>
+    #submitBtn{
+        height: 50px;
+        width: 50px;
+    }
+</style>
 
 
 
+<!-- Reservationsformularen til reservation af borde. -->
+<form id="reservationForm">
+    Reservation
+    <br/>
+    <br/>
+    <input type="text" id="firstName" value="" placeholder="First Name" required/>
+    <br/>
+    <br>
+    <input type="text" id="lastName" value="" placeholder="Last Name" required/>
+    <br/>
+    <br/>
+    <input type="text" id="email" value="" placeholder="E-Mail" required/>
+    <br/>
+    <br/>
+    <input type="text" id="phoneNumber" value="" placeholder="Phone Number" required/>
+    <br/>
+    <br/>
+    <input type="number" id="numGuests" value="" placeholder="Number of Guests" max="8" required/>
+    <br/>
+    <br/>
+    <input type="date" id="date" value="" placeholder="dd-mm-yyyy" required/>
+    <br/>
+    <br/>
+    <input type="time" id="time" value="" placeholder="12:00" min="12:00" max="23:00" required/>
+    <br/>
+    <h4> Additional Comments </h4>
+    <br/>
+    <input type="text" rows="5" cols="30" id="comment" value="" placeholder="Comment"/>
+</form>
+<button id="submitBtn" type="submit" value="submit"> submit </button>
 
+<script src="js.js"></script>
 
-<div>
-    <footer>
-
-    </footer>
-        <p> Contact </p>
-    </ul>
-</div>
-
-<script src="adminRegistration.js"> </script>
 
 </body>
+
+<!-- @Albert, kan du sætte den der bar du havde nederst-->
 </html>

@@ -1,82 +1,101 @@
-//Creation of class and constructors.
-class AdminRegistration {
-        constructor(userNameAdmin, passwordAdmin, passwordAgainAdmin) {
-            //Assigning variables for use later on.
-            this.userNameAdmin = userNameAdmin;
-            this.passwordAdmin = passwordAdmin;
-            this.passwordAgainAdmin = passwordAgainAdmin;
-        }
-    }
-
-        let adminRegistrationList = []; {
-
-        adminRegistrationList.push(new AdminRegistration("Lasse", "Lasse1234", "Lasse1234"));
-        adminRegistrationList.push(new AdminRegistration("Victoria", "Victoria1234", "Victoria1234"));
-        adminRegistrationList.push(new AdminRegistration("Anton", "Anton1234", "Anton1234"));
-
-             console.log(adminRegistrationList); }
-
-       //Creating a function to validate entries before storing them.
-        function validateRegistration() {
-
-            //Getting values entered in the HTML document by using getElementById method.
-            let userName = document.getElementById("userName").value;
-            let password = document.getElementById("password").value;
-            let passwordAgain = document.getElementById("passwordAgain").value;
-
-            let newAdminUser = new AdminRegistration(userName, password, passwordAgain);
-
-            for (let i = 0; i < adminRegistrationList.length; i++)
-
-            adminRegistrationList.push(newAdminUser);
-
-            // Her smides alle if statements ind når nedenstående fucking kode virker!!!!
-
-            storeLogin(AdminRegistration);
-
-            function storeLogin(registration) {
-
-            localStorage.setItem(registration.userNameAdmin, JSON.stringify(registration));
-
-            console.log("Nye objekt lavet af de informationer brugeren har tastet ind", registration);
-            console.log("Array med alle eksisterende admin-users", adminRegistrationList);
-
-            console.log("Ny admin user", JSON.parse(localStorage.getItem(registration.userName)));
-            console.log(adminRegistrationList);
-            }
-        }
 
 
-        
-    //}    //    }
-/*
-  function createUser () {
-
-            console.log("Calls user_id_generator");
-            user_id_generator();
-  }
-         var userObj = new User(
-        document.getElementById("userName").value,
-        document.getElementById("password").value,
-         document.getElementById("passwordAgain").value,);
-
-        adminRegistrationList.push(userObj);
-        console.log(adminRegistrationList);
-        console.log ("Ny bruker lagt til");
-
-        localStorage.setItem("allAdmins", JSON.stringify(adminRegistrationList));
-        console.log(JSON.parse(localStorage.getItem("allAdmins")));
-*/
-/*
-    //Creating a new variable which contains the entries from above
-    let newAdmin = new AdminRegistration(userName, password, passwordAgain);
-        JSON.parse(localStorage.getItem("newUser"));
-        adminRegistrationList.push(newAdmin);
-    }
-    
 
 
-    //reservationList.push(newAdmin); }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     /*
     //Creating a function that checks if the user is already to be found in the localStorage.
     function checkExistingUser() {
