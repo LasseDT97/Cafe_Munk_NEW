@@ -5,7 +5,7 @@ const reservationTable = [];
 reservationTable.push(
     {firstName: "Anton", lastName: "Søndergaard", email: "Anton_Soendergaard@hotmail.com", phoneNumber: "20108317", numGuest: 4, date: "11/12/19", time: 12.00, comment: "Hey you!"},
     {firstName: "Mikkel", lastName: "Hansen", email: "Superstar@live.dk", phoneNumber: "12723474", numGuest: 1, date: "9/12/19", time: 11.00, comment: "Hey you!"},
-    {firstName: "Lasse", lastName: "Thorby", email: "Thorby_champ@hotmail.com", phoneNumber: "34923481", numGuest: 4, date: "11/12/19", time: 9.00, comment: "Hey you!"},
+    {firstName: "Lasse", lastName: "Thoby", email: "Thoby_champ@hotmail.com", phoneNumber: "34923481", numGuest: 4, date: "11/12/19", time: 9.00, comment: "Hey you!"},
     {firstName: "Albert", lastName: "Holde", email: "Alberto@hotmail.com", phoneNumber: "19827346", numGuest: 4, date: "12/17/19", time: 13.00, comment: "Hey you!"},
     {firstName: "Victoria", lastName: "Patrick", email: "Majesty_vicroria@hotmail.com", phoneNumber: "89734561", numGuest: 2, date: "1/19/19", time: 19.00, comment: "Hey you!"},
     {firstName: "Henning", lastName: "Larsen", email: "Henning_jyyyyland@hotmail.com", phoneNumber: "09134982", numGuest: 5, date: "1/4/19", time: 20.00, comment: "Hey you!"},
