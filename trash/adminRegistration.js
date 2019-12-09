@@ -96,7 +96,7 @@
 
 
 
-    /*
+
     //Creating a function that checks if the user is already to be found in the localStorage.
     function checkExistingUser() {
 

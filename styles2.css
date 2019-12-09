@@ -27,9 +27,8 @@ ul {
     background-color: grey;
     padding: 1em;
     max-width: 180px;
-
 }
-.firstName, .email, .phoneNumber, .numGuest, .date, .time {
+.firstName, .lastName, .email, .phoneNumber, .numGuests, .date, .time {
     width: 180px;
     border: 2em;
     font-size: 12px;
@@ -58,7 +57,7 @@ h4 {
 .flex-container1 {
 display: flex;
 flex-wrap: wrap;
-    padding-bottom: 1em;
+padding-bottom: 1em;
 
 }
 .flex-container2 {
@@ -66,9 +65,9 @@ flex-wrap: wrap;
     flex-wrap: wrap;
 }
 input[id="comment"] {
-    width: 195px;        
+    width: 175px;
 }
-.reservationForm > button {      //Skal lige fixes//
-    height: 50px;
-    width: 50px;
+.reservationForm > button {
+    height: 20px;
+    width: 100px;
 }

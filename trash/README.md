@@ -52,4 +52,4 @@ Som nævnt ovenfor har vi en informationsboks med en kort beskrivelse af restaur
 
 **Klassediagram** 
 
-![Alt Text](pictures/class_diagram.jpg?raw=true "Cafe Munk class diagram")
+![Alt Text](../pictures/class_diagram.jpg?raw=true "Cafe Munk class diagram")

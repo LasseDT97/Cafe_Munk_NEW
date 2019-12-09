@@ -22,13 +22,14 @@ adminRegistrationList.push(new AdminRegistration("Lasse", "Lasse1234", "Lasse123
 adminRegistrationList.push(new AdminRegistration("Victoria", "Victoria1234", "Victoria1234"));
 adminRegistrationList.push(new AdminRegistration("Anton", "Anton1234", "Anton1234"));
 
+//Kunne også have brugt adminRegistrationList[adminRegistrationList.length] = new AdminRegistration("Lasse", "Lasse1234", "Lasse1234"));
+
 //Console.log'er vores array
 console.log(adminRegistrationList);
 
-//for loop der går gennem array'et så længe i er mindre end længden på array'et
+//for loop der går gennem array'et så længe i (0) er mindre end længden på array'et
 //I og for sig ligegyldig - kan bruges til at skrive om optimering
-for (var i = 0; i < adminRegistrationList.length; i++) {
-
+for (let i = 0; i < adminRegistrationList.length; i++) {
 }
 
 //Laver en funktion som gemmer de indtastninger der laves på html siden "admin"
@@ -44,6 +45,7 @@ function validateRegistration() {
     //Bruger igen .push metoden til at pushe den variabel vi har lavet ovenfor
     // op i vores array list.
     adminRegistrationList.push(newAdminUser);
+    //Kunne også have brugt adminRegistrationList[adminRegistrationList.length] = newAdminUser;
 
     //Tilføjer objectet som er vores array via key'et adminRegistrationList
     // der er blevet stringified ved JSON.Stringify metoden til localStorage
