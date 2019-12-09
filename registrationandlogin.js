@@ -6,11 +6,12 @@ document.getElementById("registration_btn").onclick = function (){ validateRegis
 class AdminRegistration {
     constructor(userNameAdmin, passwordAdmin, passwordAgainAdmin) {
         //Assigning variables for use later on.
-        this.userNameAdmin = userNameAdmin;
-        this.passwordAdmin = passwordAdmin;
-        this.passwordAgainAdmin = passwordAgainAdmin;
+        this.userName = userNameAdmin;
+        this.password = passwordAdmin;
+        this.passwordAgain = passwordAgainAdmin;
     }
-} // Nu har vi altså oprettet en klasse med constructors og dertilhørende
+}
+// Nu har vi altså oprettet en klasse med constructors og dertilhørende
 // properties som vi skal bruge når vi pusher værdier ind i et array senere
 
 //Opretter et nyt tomt array
@@ -29,8 +30,8 @@ console.log(adminRegistrationList);
 
 //for loop der går gennem array'et så længe i (0) er mindre end længden på array'et
 //I og for sig ligegyldig - kan bruges til at skrive om optimering
-for (let i = 0; i < adminRegistrationList.length; i++) {
-}
+//for (let i = 0; i < adminRegistrationList.length; i++) {
+//}
 
 //Laver en funktion som gemmer de indtastninger der laves på html siden "admin"
 function validateRegistration() {
@@ -57,5 +58,5 @@ function validateRegistration() {
     console.log(JSON.parse(localStorage.getItem("adminRegistrationList")));
 
 }
-//Kalder funktionen
-validateRegistration();
+//Kalder funktionen - ikke nødvendigt, da funktionen bliver kaldt i linje 2.
+//validateRegistration();
