@@ -5,7 +5,7 @@ document.getElementById("registration_btn").onclick = function (){ validateRegis
 // Herefter tildeles værdier ved object constructor / this. metoden
 class AdminRegistration {
     constructor(userNameAdmin, passwordAdmin, passwordAgainAdmin) {
-        //Assigning variables for use later on.
+        //Bruger this. metoden til at tildele værdier fra properties
         this.userName = userNameAdmin;
         this.password = passwordAdmin;
         this.passwordAgain = passwordAgainAdmin;
@@ -33,7 +33,7 @@ console.log(adminRegistrationList);
 //for (let i = 0; i < adminRegistrationList.length; i++) {
 //}
 
-//Laver en funktion som gemmer de indtastninger der laves på html siden "admin"
+//Laver en funktion som henter de indtastninger der laves på html siden "admin"
 function validateRegistration() {
     // Henter værdierne til vores properties fra html ved deres id
     let userNameAdmin = document.getElementById("userNameAdmin").value;
@@ -46,8 +46,26 @@ function validateRegistration() {
     //Bruger igen .push metoden til at pushe den variabel vi har lavet ovenfor
     // op i vores array list.
     adminRegistrationList.push(newAdminUser);
-    //Kunne også have brugt adminRegistrationList[adminRegistrationList.length] = newAdminUser;
+    adminRegistrationList[adminRegistrationList.length] = newAdminUser;
 
+    // Opretter et switch statement på variablen passwordAdmin
+    switch (passwordAdmin) {
+        //Sætter de 8 mest brugte passwords ind som enkeltstående cases
+        case "qwerty":
+        case "password":
+        case "111111":
+        case "12345678":
+        case "abc123":
+        case "1234567":
+        case "password1":
+        case "12345":
+        case "":
+            //Opretter en alert i tilfælde af de 8 ovenstående cases
+            alert("Meget uorginalt. Kan du ikke finde på en bedre adgangskode?");
+            //Returnerer false for at stoppe koden
+            return false;
+    }
+    
     //Tilføjer objectet som er vores array via key'et adminRegistrationList
     // der er blevet stringified ved JSON.Stringify metoden til localStorage
     localStorage.setItem("adminRegistrationList", JSON.stringify(newAdminUser));
@@ -56,7 +74,7 @@ function validateRegistration() {
     //Den text vi henter via key'et laver vi om til et array
     // ved brug af JSON.parse metoden
     console.log(JSON.parse(localStorage.getItem("adminRegistrationList")));
-
+    alert("Ny administrator bruger oprettet")
 }
 //Kalder funktionen - ikke nødvendigt, da funktionen bliver kaldt i linje 2.
 //validateRegistration();

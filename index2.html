@@ -27,9 +27,14 @@
     <input class="lastName"id="lastName" type="text" placeholder="Efternavn" value=""/> <br>
     <input class="email" id="email" type="email" placeholder="E-Mail" value=""/> <br>
     <input class="phoneNumber" id="phoneNumber" type="number" placeholder="Telefon nummer" value=""/> <br>
-    <input class="numGuests" id="numGuests" type="number" placeholder="Antal gæster" value=""/> <br>
+    <input class="numGuests" id="numGuests" type="number" max="8" min="1" placeholder="Antal gæster" value=""/> <br>
     <input class="date" id="date" type="date" placeholder="Dato" value=""/> <br>
     <input class="time "id="time" type="time" placeholder="Tidspunkt" value=""/>
+    <!--<select class="timeSelector" id="timeSelector">
+        <option value="12:00">12:00</option>
+        <option value="12:30">12:30</option>
+        <option value="13:00">13:00</option>
+    </select> --!>
     <input class="comment" id="comment" type="text" placeholder="Yderligere kommentar til booking" value=""/> <br> <br>
     <button id="submitBtn" type="submit" value="submit" onClick="checkValidity()">Reservér</button> <br>
 </form>

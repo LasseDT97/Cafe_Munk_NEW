@@ -31,7 +31,7 @@ reservationList.push(new Reservation("Albert", "Holde", null, null, null, null, 
 console.log(reservationList);
 
 // Loops through the array of reservations as long as i is smaller than the length of the array list
-for (var i = 0; i < reservationList.length; i++)
+for (let i = 0; i < reservationList.length; i++)
 
 {
     // Store each Reservation in a new localStorage item where the keyName is the firstName property of the Reservation and the keyValue is the entire Reservation object.
@@ -76,13 +76,23 @@ function checkValidity() {
     var form_validation = true;
     var validation_message = "";
 
-
 // Bruger "if" conditional statement for at validere om den indtastede værdi i firstName er null (ingen værdi) eller empty string ("")
 
     if (firstName === null || firstName === "") {
         validation_message += "Please fill in your firstname! \n";
         form_validation = false;
     }
+     /*try {
+     if (firstName === 'string');
+     if (firstName === instanceof String);}
+         catch (error){
+         console.log("Shit is not a string, try again " +error)
+    }/*
+/*
+    if (typeof firstName == 'number') {
+        validation_message += "Your name can't be a number! \n";
+        form_validation = false;
+    } */
 
 // Tjek om lastName er null eller empty string
     if (lastName === null || lastName === "") {
@@ -130,7 +140,13 @@ function checkValidity() {
 
     }
 
-
+try {
+    checkValidity();
+    saveInputs();
+}
+catch (error) {
+    console.log("Få lige styr på din kode, det her er fejlen: " + error)
+}
 //}
 
 
