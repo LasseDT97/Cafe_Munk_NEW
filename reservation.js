@@ -19,7 +19,6 @@ class Reservation {
     }
 }
 
-
 //Vi erklærer værdien af variablen "reservationsList" som et tomt array
 let reservationList = [];
 
@@ -60,13 +59,10 @@ for (var i = 0; i < reservationList.length; i++)
 
         reservationList.push(newResevation);
 
-
-
 // Opretter to variabler som bruges til at validere nedenstående form værdier
 // Vi sætter form_validation = true, og validation_message = "" (Bruges så vi ved hver enkelt form kan indtaste individuelle alert statements
         var form_validation = true;
         var validation_message = "";
-
 
 // Bruger "if" conditional statement for at validere om den indtastede værdi i firstName er null (ingen værdi) eller empty string ("")
         if (firstName === null || firstName === "") {
@@ -107,12 +103,10 @@ for (var i = 0; i < reservationList.length; i++)
         if (form_validation) {
             saveInputs(newResevation);
 
-
             function saveInputs(reservation) {
 
                 console.log('Det nye objekt som blev lavet af de oplysninger som var indtastet da brugeren trykkede på submit', reservation);
                 console.log('Array med alle eksisterende reservationer', reservationList);
-
 
 // Gemmer hver Reservation i et nyt localStorage element hvor keyName er firstName property af Reservation og keyValue er hele reservationsobjektet
 // JSON.stringify bruges fordi vi ikke kan gemme et JSON object som localStorage derfor skal vi konvertere objektet om til en string inden det kan gemme det.

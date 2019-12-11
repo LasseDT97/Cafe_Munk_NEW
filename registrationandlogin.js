@@ -29,7 +29,7 @@ adminRegistrationList.push(new AdminRegistration("Anton", "Anton1234", "Anton123
 console.log(adminRegistrationList);
 
 //for loop der går gennem array'et så længe i (0) er mindre end længden på array'et
-//I og for sig ligegyldig - kan bruges til at skrive om optimering
+//I og for sig ligegyldig - bliver først nødvendig når validering bliver til koden
 //for (let i = 0; i < adminRegistrationList.length; i++) {
 //}
 

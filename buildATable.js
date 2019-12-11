@@ -19,13 +19,11 @@ function buildTable(data) {
     let table = document.createElement("table");
     table.addEventListener('click', removeRow, false);
 
-
 // Styler table elementets, border, padding, borderSpacing & background med DOM style property
     table.style.border = "thick dotted #000000";
     table.style.padding = "20px 20px 20px 20px";
     table.style.borderSpacing = "10px 10px";
     table.style.background = "#A9A9A9";
-
 
 // Erklærer variablen "fields" til object.keys() funktionen som modtager ovenstående opjekter og returnere alle keys i et array
 // Erklærer variablerne "fields & headRow" ved keyword "let" som kun kan bruges i dette block scope
@@ -41,7 +39,6 @@ function buildTable(data) {
 // Debugger koden ved at console.log (fields) og får som ønsket udskrevet et array med de proporties som (Data) indeholder
     console.log(data[0]);
     console.log(fields);
-
 
 // Bruger.forEach() metode til  kalde funktionen "field" på alle elementer i vores array "data"
 // textContent property for at finde elementets tekst som bruges til at ændre teksten i elementet <th>
@@ -63,13 +60,10 @@ function buildTable(data) {
         let button = document.createElement("button");
         button.style.color = "#FF0000";
 
-
-
 // Tilføjer en knap med innerHTML propoerty
 // Tildeler knappen en klasse, men HTML className property
         button.innerHTML = "Slet reservation";
         button.className = "btn";
-
 
         fields.forEach(function(field) {
 
@@ -79,7 +73,6 @@ function buildTable(data) {
             if (typeof object[field] == "number" ) {
                 cell.style.textAlign = "center";
 
-
             }
             row.appendChild(cell);
             row.appendChild(button);
@@ -87,18 +80,13 @@ function buildTable(data) {
         table.appendChild(row);
     });
 
-
 // Returnerer table elementet
     return table;
-
 
 }
 
 document.querySelector("#table")
     .appendChild(buildTable(reservationTable));
-
-
-
 
 //Erklærer funktionen removeRow med tilhørende parameter (event)
 function removeRow(event) {
